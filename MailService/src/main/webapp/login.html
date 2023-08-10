@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.inputform{
+    position: absolute;
+    top: 220px;
+    left: 35%;
+    width:400px;
+    border:1px solid pink;
+    border-radius:10px;
+    padding:10px;
+    height: auto;   
+}
+.inputform table tr td input,textarea,select
+{
+	width:300px;
+}
+#gender1,#gender2
+{
+	width:10px;
+}
+#submit
+{
+    position: relative;
+    top: 5px;
+    left: 80px;
+    bottom: 5px;
+	margin-left:100px;
+	width:100px;
+}
+#reset
+{
+	width:100px;
+}
+.design{
+    background-color:red;
+    color:white;
+    padding-left:100px;
+}</style>
+</head>
+<body>
+<div class="inputform" style="float:left;">
+<h2 class="design">Login Form</h2>
+<form action="LoginServlet" method="post">
+<table>
+<tr><td>Email:</td><td><input type="email" name="email"/></td></tr>
+<tr><td>Password:</td><td><input type="password" name="password"/></td></tr>
+<tr><td colspan="2"><input id="submit" type="submit" value="login"/>
+</td></tr>
+</table>
+</form>
+</div>
+</body>
